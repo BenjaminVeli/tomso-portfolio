@@ -2,13 +2,14 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.astro';
 
-import Hero from '../sections/Hero.astro';
+import Hero from '../sections/Hero.jsx';
 import Projects from '../sections/Projects.astro';
 
 
 import Layout from '../layouts/Layout.astro';
 
 import '../styles/global.css';
+import Contact from '../sections/Contact.astro';
 
 
 
@@ -18,9 +19,10 @@ import '../styles/global.css';
 
 <Layout>
 	<Header client:load/>
-	<Hero />
+	<Hero client:load/>
 	<main>
 		<Projects />
+		<Contact />
 	</main>
 	<Footer />
 </Layout>

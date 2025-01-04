@@ -35,9 +35,9 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className="sticky top-0 z-50 bg-black">
       <div className="header-lower">
-        <div className="container">
+        <div className="container relative">
           <div className="flex justify-between lg:relative items-center h-16 lg:h-18">
             <a
               href="/"
