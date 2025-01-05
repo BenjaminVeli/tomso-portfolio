@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-
+				customButton: 'rgba(196, 240, 0 , 1)',
 			},
 		},
 		screens: {
