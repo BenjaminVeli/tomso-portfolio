@@ -35,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-black">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black">
       <div className="header-lower">
         <div className="container relative">
           <div className="flex justify-between lg:relative items-center h-16 lg:h-18">
@@ -44,7 +44,7 @@ const Header = () => {
               title="Go to Tomso homepage"
               aria-label="Tomso homepage"
             >
-              <img src={LogoIcon.src} alt="Tomso logo" className="w-10 h-10" />
+              <img src={LogoIcon.src} alt="Tomso logo" className="h-8 w-8" />
             </a>
 
             {/* Menú para pantallas grandes */}

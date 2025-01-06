@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				customButton: 'rgba(196, 240, 0 , 1)',
+				customSection: '#070707',
 			},
 		},
 		screens: {

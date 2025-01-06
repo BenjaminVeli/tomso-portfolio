@@ -3,8 +3,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.astro';
 
 import Hero from '../sections/Hero.jsx';
-import Projects from '../sections/Projects.astro';
-
+import Projects from '../sections/Project.jsx';
 
 import Layout from '../layouts/Layout.astro';
 
@@ -21,7 +20,7 @@ import Contact from '../sections/Contact.astro';
 	<Header client:load/>
 	<Hero client:load/>
 	<main>
-		<Projects />
+		<Projects client:load/>
 		<Contact />
 	</main>
 	<Footer />

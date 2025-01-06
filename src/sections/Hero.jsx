@@ -34,7 +34,7 @@ const buttonVariants = {
 
 const Hero = () => {
   return (
-    <section id="hero" className="flex justify-center items-center">
+    <section id="hero" className="w-full flex justify-center items-center min-h-screen">
       <div className="container relative">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <motion.div
