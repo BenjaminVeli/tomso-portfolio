@@ -13,7 +13,11 @@ const NavItems = ({ closeMenu }) => (
     {navLinks.map(({ id, href, name }) => (
       <li
         key={id}
-        className="text-customLink hover:text-customOrange duration-500 transition-all font-medium text-base w-full bg-blue-900 lg:bg-transparent hover:bg-red-900 lg:hover:bg-transparent py-2 px-4 text-center rounded-md"
+        className={`text-customLink hover:text-white lg:hover:text-customOrange duration-500 transition-all font-medium text-base w-full py-2 px-4 text-center rounded-md ${
+          id === 1
+            ? "bg-customOrange lg:bg-transparent text-white lg:text-customLink"
+            : "bg-transparent hover:bg-customOrange lg:hover:bg-transparent"
+        }`}
       >
         <a href={href} onClick={closeMenu} className="block w-full">
           {name}
