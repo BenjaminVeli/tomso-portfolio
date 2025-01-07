@@ -12,7 +12,8 @@ export default {
 				'light-gray-custom': 'rgb(14, 14, 16)',
 				'dark-gray-custom': 'rgb(28 28 33)',
 				customInput: 'rgb(28 28 33)',
-				colorInput: 'rgb(228 228 230)'
+				colorInput: 'rgb(228 228 230)',
+				slateCustom: '#f1f7feb5'
 			},
 		},
 		screens: {

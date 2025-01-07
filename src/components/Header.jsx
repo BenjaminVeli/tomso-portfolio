@@ -9,13 +9,13 @@ import BtnX from "../assets/bx-x.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NavItems = ({ closeMenu }) => (
-  <ul className="flex flex-col items-center gap-6 lg:flex-row lg:gap-11 relative z-20">
+  <ul className="flex flex-col items-center gap-6 lg:flex-row lg:gap-11 relative z-20 w-full">
     {navLinks.map(({ id, href, name }) => (
       <li
         key={id}
-        className="text-customLink hover:text-customOrange duration-500 font-medium text-base"
+        className="text-customLink hover:text-customOrange duration-500 transition-all font-medium text-base w-full bg-blue-900 lg:bg-transparent hover:bg-red-900 lg:hover:bg-transparent py-2 px-4 text-center rounded-md"
       >
-        <a href={href} onClick={closeMenu}>
+        <a href={href} onClick={closeMenu} className="block w-full">
           {name}
         </a>
       </li>
@@ -78,39 +78,41 @@ const Header = () => {
               />
             </button>
           </div>
-
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div
-                className="absolute z-40 inset-y-0 left-0 lg:hidden block w-[240px] h-screen bg-white"
-                variants={menuVariants} // Variantes de animación
-                initial="hidden" // Estado inicial (fuera de pantalla)
-                animate="visible" // Cuando está visible
-                exit="exit" // Cuando sale de la pantalla
-                transition={{ type: "tween", duration: 0.3 }} // Transición suave
-              >
-                {/* Botón para cerrar el menú móvil */}
-                <button
-                  onClick={closeMenu}
-                  className="right-4 z-10 top-5 flex items-center justify-center w-8 h-8 cursor-pointer absolute "
-                  alt="Close Menu"
-                >
-                  <img
-                    src={BtnX.src}
-                    alt="Close icon"
-                    className="cursor-pointer h-8 w-8"
-                  />
-                </button>
-                <div className="py-10 px-5">
-                  <h2 className="text-2xl font-medium text-customLink py-4">Menu</h2>
-                  <nav>
-                    <NavItems closeMenu={closeMenu} />
-                  </nav>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className="absolute z-40 inset-y-0 left-0 lg:hidden block w-[240px] h-screen bg-white"
+              variants={menuVariants} // Variantes de animación
+              initial="hidden" // Estado inicial (fuera de pantalla)
+              animate="visible" // Cuando está visible
+              exit="exit" // Cuando sale de la pantalla
+              transition={{ type: "tween", duration: 0.3 }} // Transición suave
+            >
+              {/* Botón para cerrar el menú móvil */}
+              <button
+                onClick={closeMenu}
+                className="right-4 z-10 top-5 flex items-center justify-center w-8 h-8 cursor-pointer absolute "
+                alt="Close Menu"
+              >
+                <img
+                  src={BtnX.src}
+                  alt="Close icon"
+                  className="cursor-pointer h-8 w-8"
+                />
+              </button>
+              <div className="py-10 px-5">
+                <h2 className="text-2xl font-medium text-customLink py-4">
+                  Menu
+                </h2>
+                <nav>
+                  <NavItems closeMenu={closeMenu} />
+                </nav>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );

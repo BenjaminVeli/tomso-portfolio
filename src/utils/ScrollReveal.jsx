@@ -1,5 +1,6 @@
 import React from "react";
-import { delay, motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { fadeUp } from "./motionVariants";
 
 const ScrollReveal = ({
   children,
@@ -11,33 +12,15 @@ const ScrollReveal = ({
   const isInView = useInView(ref, { once: true, amount });
 
   const variants = {
-    text: {
-      initial: {
-        y: 200,
-        opacity: 0,
-      },
+    container: {
+      initial: {},
       animate: {
-        y: 0,
-        opacity: 1,
         transition: {
-          duration: 1,
-        },
-      },
-    },
-    divUp: {
-      initial: {
-        y: 250,
-        opacity: 0,
-      },
-      animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
           staggerChildren: 0.1,
         },
       },
     },
+    fadeUp,
   };
 
   return (

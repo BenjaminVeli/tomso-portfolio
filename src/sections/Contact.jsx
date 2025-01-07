@@ -2,27 +2,32 @@ import React from "react";
 import Setup from "../images/Setup.webp";
 import ScrollReveal from "../utils/ScrollReveal";
 
+import { motion } from "framer-motion";
+import { fadeUp } from "../utils/motionVariants";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20 md:py-24 bg-customSection">
       <div className="container">
-        <ScrollReveal variant="text">
-          <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_right,white,white,#aaaaaa)] text-transparent bg-clip-text mb-20">
+        <ScrollReveal variant="container">
+          <motion.h2
+            variants={fadeUp}
+            className="text-5xl md:text-6xl font-medium text-center tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_right,white,white,#aaaaaa)] text-transparent bg-clip-text mb-20"
+          >
             Contact
-          </h2>
-        </ScrollReveal>
+          </motion.h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center  ">
-          <ScrollReveal variant="divUp" className="flex justify-center">
-            <img
-              src={Setup.src}
-              className="w-11/12 h-[580px] object-cover rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer"
-              alt="Image Setup"
-            />
-          </ScrollReveal>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center  ">
+            <motion.div variants={fadeUp} className="flex justify-center">
+              <img
+                src={Setup.src}
+                className="w-11/12 h-[580px] object-cover rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+                alt="Image Setup"
+              />
+            </motion.div>
 
-          <ScrollReveal variant="divUp">
-            <div
+            <motion.div
+              variants={fadeUp}
               id="form-container"
               class="w-11/12 border border-dark-gray-custom bg-light-gray-custom rounded-lg mx-auto shadow-lg"
             >
@@ -102,9 +107,9 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
-            </div>
-          </ScrollReveal>
-        </div>
+            </motion.div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
