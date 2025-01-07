@@ -6,6 +6,13 @@ export default {
 			colors: {
 				customButton: 'rgba(196, 240, 0 , 1)',
 				customSection: '#070707',
+				customLink: '#292929',
+				customOrange: '#fc5723',
+				customGray: '#aaaaaa',
+				'light-gray-custom': 'rgb(14, 14, 16)',
+				'dark-gray-custom': 'rgb(28 28 33)',
+				customInput: 'rgb(28 28 33)',
+				colorInput: 'rgb(228 228 230)'
 			},
 		},
 		screens: {

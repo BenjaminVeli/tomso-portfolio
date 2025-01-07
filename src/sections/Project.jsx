@@ -27,7 +27,10 @@ const Single = ({ itemProject }) => {
               className="w-full h-full object-cover"
             />
           </div>
-          <motion.div className="flex items-center md:items-start flex-col gap-4 " style={{ y }}>
+          <motion.div
+            className="flex items-center md:items-start flex-col gap-4 "
+            style={{ y }}
+          >
             <h3 className="text-white text-5xl font-semibold">
               {itemProject.title}
             </h3>
@@ -63,18 +66,13 @@ const Project = () => {
   });
 
   return (
-    <section id="projects">
-      <div className="portfolio" ref={ref}>
-        <div className="progress z-50">
-          <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_right,white,white,rgb(32,32,138,.5))] text-transparent bg-clip-text mb-2">
-            Featured Works
-          </h2>
-          <motion.div style={{ scaleX }} className="progressBar"></motion.div>
-        </div>
-        {itemProjects.map((itemProject) => (
-          <Single itemProject={itemProject} key={itemProject.id} />
-        ))}
-      </div>
+    <section id="projects" className="pt-20">
+      <h2 className=" text-5xl md:text-6xl font-medium text-center tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_right,white,white,rgb(32,32,138,.5))] text-transparent bg-clip-text mb-2">
+        Featured Works
+      </h2>
+      {itemProjects.map((itemProject) => (
+        <Single itemProject={itemProject} key={itemProject.id} />
+      ))}
     </section>
   );
 };

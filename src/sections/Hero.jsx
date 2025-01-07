@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import Tomso from "../images/Tomso.png";
+import Tomso from "../images/TomsoGreen.png";
 import Scroll from "../images/scroll.png";
 
 const textVariants = {
@@ -34,7 +34,7 @@ const buttonVariants = {
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-full flex justify-center items-center min-h-screen">
+    <section id="hero" className="w-full flex justify-center items-center min-h-screen bg-white">
       <div className="container relative">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <motion.div
@@ -45,13 +45,13 @@ const Hero = () => {
           >
             <motion.h1
               variants={textVariants}
-              className="text-white text-[2.7rem] sm:text-5xl xl:text-8xl leading-none mb-4 font-semibold"
+              className="text-black text-[2.7rem] sm:text-5xl xl:text-8xl leading-none mb-4 font-semibold"
             >
               Benjamín Veli
             </motion.h1>
             <motion.h2
               variants={textVariants}
-              className="sm:text-3xl text-xl leading-none text-white font-normal"
+              className="sm:text-3xl text-xl leading-none text-black font-normal"
             >
               Full Stack Developer
             </motion.h2>

@@ -1,27 +1,25 @@
 ---
+import Hero from '../sections/Hero.jsx';
+import About from '../sections/About';
+import Projects from '../sections/Project.jsx';
+import Contact from '../sections/Contact.jsx';
+
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.astro';
-
-import Hero from '../sections/Hero.jsx';
-import Projects from '../sections/Project.jsx';
 
 import Layout from '../layouts/Layout.astro';
 
 import '../styles/global.css';
-import Contact from '../sections/Contact.astro';
 
-
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Header client:load/>
 	<Hero client:load/>
 	<main>
+		<About client:load/>
 		<Projects client:load/>
-		<Contact />
+		<Contact client:load/>
 	</main>
 	<Footer />
 </Layout>

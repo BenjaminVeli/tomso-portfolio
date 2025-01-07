@@ -13,7 +13,7 @@ const NavItems = ({ closeMenu }) => (
     {navLinks.map(({ id, href, name }) => (
       <li
         key={id}
-        className="text-black lg:text-white/70 hover:text-blue-900 lg:hover:text-white md:font-normal duration-500 font-medium text-base"
+        className="text-customLink hover:text-customOrange duration-500 font-medium text-base"
       >
         <a href={href} onClick={closeMenu}>
           {name}
@@ -35,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-black">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white">
       <div className="header-lower">
         <div className="container relative">
           <div className="flex justify-between lg:relative items-center h-16 lg:h-18">
@@ -92,7 +92,7 @@ const Header = () => {
                 {/* Botón para cerrar el menú móvil */}
                 <button
                   onClick={closeMenu}
-                  className="right-4 z-10 top-4 flex items-center justify-center w-8 h-8 cursor-pointer absolute"
+                  className="right-4 z-10 top-5 flex items-center justify-center w-8 h-8 cursor-pointer absolute "
                   alt="Close Menu"
                 >
                   <img
@@ -102,6 +102,7 @@ const Header = () => {
                   />
                 </button>
                 <div className="py-10 px-5">
+                  <h2 className="text-2xl font-medium text-customLink py-4">Menu</h2>
                   <nav>
                     <NavItems closeMenu={closeMenu} />
                   </nav>
