@@ -1,16 +1,13 @@
 import { RiReactjsFill } from "react-icons/ri";
 import { RiNextjsLine } from "react-icons/ri";
 import { SiAstro } from "react-icons/si";
-import { RiVuejsFill } from "react-icons/ri";
+import { SiFramer } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 import { RiPhpFill } from "react-icons/ri";
 import { SiLaravel } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
-
-import { SiFramer } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiDocker } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 
 export const techStack = {
@@ -18,20 +15,16 @@ export const techStack = {
         { id: 1, name: 'React', icon: RiReactjsFill },
         { id: 2, name: 'Next.js', icon: RiNextjsLine },
         { id: 3, name: 'Astro', icon: SiAstro },
-        { id: 4, name: 'Vue', icon: RiVuejsFill },
+        { id: 4, name: 'Framer', icon: SiFramer },
+        { id: 5, name: 'Tailwind', icon: RiTailwindCssFill },
     ],
     Backend: [
         { id: 1, name: 'PHP', icon: RiPhpFill },
         { id: 2, name: 'Laravel', icon: SiLaravel },
         { id: 3, name: 'Django', icon: SiDjango },
         { id: 4, name: 'Node.js', icon: SiNodedotjs },
-    ],
-    Tools: [
-        { id: 1, name: 'Framer', icon: SiFramer },
-        { id: 2, name: 'Tailwind', icon: RiTailwindCssFill },
-        { id: 3, name: 'Docker', icon: SiDocker },
-        { id: 4, name: 'GitHub', icon: SiGithub },
-    ],
+        { id: 5, name: 'GitHub', icon: SiGithub },
+    ]
 };
 
 export const navLinks = [
