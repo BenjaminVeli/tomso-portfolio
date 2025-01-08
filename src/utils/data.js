@@ -38,7 +38,7 @@ export const itemProjects = [
     {
         id: 1,
         title: "Tomso",
-        description: "Landing Page diseñada para representar servicios de creación y venta de sitios web. Desarrollada con tecnologías modernas como Next.js, Tailwind CSS, y animaciones fluidas integradas con Framer Motion.",
+        description: "Landing page designed to showcase web creation and sales services.Built with modern technologies like Next.js, Tailwind CSS, and smooth animations powered by Framer Motion.",
         img: "/Project1.webp",
         alt: "Project Tomso",
         url: "https://tomso.vercel.app/",
@@ -46,7 +46,7 @@ export const itemProjects = [
     {
         id: 2,
         title: "Tomso AI",
-        description: "Landing Page diseñada para presentar TomsoAi una ia  que genera estilos de código personalizados utilizando Tailwind CSS, inspirada en el diseño de Scale AI. Desarrollada con React y Tailwind CSS, y animaciones fluidas integradas con Framer Motion.",
+        description: "Landing page designed to showcase TomsoAi, an AI that generates custom code styles using Tailwind CSS, inspired by Scale AI design. Built with React and Tailwind CSS, featuring smooth animations powered by Framer Motion.",
         img: "/Project2.webp",
         alt: "Project TomsoAI",
         url: "https://tomsoai.vercel.app/",
@@ -54,7 +54,7 @@ export const itemProjects = [
     {
         id: 3,
         title: "Exploratec",
-        description: "Landing Page que ofrece un recorrido virtual 360° por el campus de la sede Lima de Tecsup. Desarrollada con React y Tailwind CSS, y animaciones fluidas integradas con Framer Motion. ",
+        description: "Landing page offering a 360° virtual tour of the Lima campus of Tecsup. Built with React and Tailwind CSS, featuring smooth animations powered by Framer Motion.",
         img: "/Project3.webp",
         alt: "Project Exploratec",
         url: "https://exploratec.vercel.app/",
@@ -62,7 +62,7 @@ export const itemProjects = [
     {
         id: 4,
         title: "NextGenPC",
-        description: "Landing Page diseñada para una tienda especializada en componentes y accesorios de alta calidad para PC. Desarrollada con HTML, Bootstrap y Javascript para una experiencia atractiva.",
+        description: "Landing page designed for a store specializing in high-quality PC components and accessories. Built with HTML, Bootstrap, and JavaScript for an engaging experience.",
         img: "/Project4.webp",
         alt: "Project NextGenPC",
         url: "https://lading-page-tomso.vercel.app/",

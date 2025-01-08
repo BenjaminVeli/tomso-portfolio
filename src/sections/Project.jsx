@@ -20,11 +20,11 @@ const Single = ({ itemProject }) => {
     >
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 wrapper">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center cursor-pointer">
             <img
               src={itemProject.img}
               alt={itemProject.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-95"
             />
           </div>
           <motion.div
