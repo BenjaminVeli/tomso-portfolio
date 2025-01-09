@@ -15,8 +15,8 @@ export default {
 				colorInput: 'rgb(228 228 230)',
 				slateCustom: '#f1f7feb5',
 				slateCustomA: '#d9edff5d',
-				
 				zaffreBlue: '#4831d4',
+				customBeige: '#ebe5c9',
 			},
 		},
 		screens: {

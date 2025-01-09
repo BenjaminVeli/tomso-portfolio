@@ -5,7 +5,7 @@ import Projects from '../sections/Project.jsx';
 import Contact from '../sections/Contact.jsx';
 
 import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.astro';
+import Footer from '../components/Footer.jsx';
 
 import Layout from '../layouts/Layout.astro';
 
@@ -21,5 +21,5 @@ import '../styles/global.css';
 		<Projects client:load/>
 		<Contact client:load/>
 	</main>
-	<Footer />
+	<Footer client:load/>
 </Layout>

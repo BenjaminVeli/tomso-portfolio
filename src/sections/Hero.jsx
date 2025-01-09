@@ -3,7 +3,6 @@ import { fadeFromLeft } from "../utils/motionVariants";
 import ScrollReveal from "../utils/ScrollReveal";
 
 import Tomso from "../images/TomsoGreen.png";
-import Scroll from "../images/scroll.png";
 
 const Hero = () => {
   return (
@@ -19,7 +18,7 @@ const Hero = () => {
           >
             <motion.h1
               variants={fadeFromLeft}
-              className="text-black text-[2.7rem] sm:text-5xl xl:text-8xl leading-none mb-4 font-semibold"
+              className="text-black text-[2.7rem] sm:text-5xl xl:text-7xl leading-none mb-4 font-semibold"
             >
               Benjamín Veli
             </motion.h1>

@@ -20,7 +20,7 @@ const Contact = () => {
           </motion.h2>
           <motion.h2
             variants={fadeUp}
-            className="text-xl md:text-2xl text-violet-900  text-center mb-40"
+            className="text-xl md:text-2xl text-violet-900  text-center mb-16 md:mb-40"
           >
             Do you have an exciting proposal or idea to share? Let’s make it
             happen!

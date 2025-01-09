@@ -10,6 +10,10 @@ import { SiDjango } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 
+import { RiInstagramLine } from "react-icons/ri";
+import { RiTiktokFill } from "react-icons/ri";
+import { RiTwitterXFill } from "react-icons/ri";
+
 export const techStack = {
     Frontend: [
         { id: 1, name: 'React', icon: RiReactjsFill },
@@ -69,6 +73,17 @@ export const itemProjects = [
     },
 ]
 
+export const socialMedias = [
+    {
+        id: 1, icon: RiInstagramLine, link: 'https://www.instagram.com/tomso.app/',
+    },
+    {
+        id: 2, icon: RiTiktokFill, link: 'https://www.tiktok.com/@tomso.js?lang=es',
+    },
+    {
+        id: 3, icon: RiTwitterXFill, link: 'https://x.com/TomsoJS',
+    },
+]
 
 
 

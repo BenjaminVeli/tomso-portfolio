@@ -14,7 +14,21 @@ export const fadeFromLeft = {
 
 export const fadeUp = {
   initial: {
-    y: 250,
+    y: 180,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+export const fadeUpShort = {
+  initial: {
+    y: 100,
     opacity: 0,
   },
   animate: {
