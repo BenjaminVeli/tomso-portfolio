@@ -1,4 +1,6 @@
 ---
+import { StringSchema } from "astro/dist/env/schema";
+
 interface Props {
   title?: string;
   description?: string;
@@ -11,6 +13,11 @@ interface Props {
   publishedTime?: string;
   updatedTime?: string;
   themeColor?: string;
+  user?: string;
+  image?: string;
+  imageHeight?: string;
+  imageWidth?: string;
+  imageAlt?: string;
 }
 
 const {
@@ -25,6 +32,11 @@ const {
   locale = "en_US",
   publishedTime = "2025-01-01T12:00:00Z",
   updatedTime = "2025-01-08T18:00:00Z",
+  user = "@TomsoJS",
+  image = "https://tomso-portfolio.vercel.app/Tomso.png",
+  imageHeight = "300",
+  imageWidth = "300",
+  imageAlt = "Tomso Logo",
 } = Astro.props;
 ---
 
@@ -52,11 +64,35 @@ const {
     <meta property="og:locale" content={locale} />
     <meta property="og:published_time" content={publishedTime} />
     <meta property="og:updated_time" content={updatedTime} />
+    <meta name="og:image" content={image} />
+    <meta name="og:image:width" content={imageWidth} />
+    <meta name="og:image:height" content={imageHeight} />
+    <meta name="og:image:alt" content={imageAlt} />
 
-    <!-- <meta name="og:image" content={} /> -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={user} />
+    <meta name="twitter:creator" content={user} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content={imageAlt} />
 
     <!-- Required -->
     <title>{title}</title>
+
+    <!-- Preload para la fuente Epilogue -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <slot />
