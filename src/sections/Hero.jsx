@@ -53,6 +53,9 @@ const Hero = () => {
               src={Tomso.src}
               alt="Profile"
               className="w-60 md:w-72 object-cover"
+              loading="lazy"
+              width="300"
+              height="300"
             />
           </ScrollReveal>
         </div>
