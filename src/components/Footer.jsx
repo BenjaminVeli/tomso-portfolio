@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <footer className="bg-white">
       <div className="footer-upper pt-20">
-        <div class="container">
+        <div className="container">
           <ScrollReveal variant="container">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <motion.div
                 variants={fadeUpShort}
                 className="text-center md:text-left"
@@ -25,12 +25,12 @@ const Footer = () => {
                 </p>
               </motion.div>
 
-              <motion.div variants={fadeUpShort} class="text-center">
+              <motion.div variants={fadeUpShort} className="text-center">
                 <h3 className="text-black text-lg font-bold mb-4">Menu</h3>
                 <nav>
                   <ul className="flex flex-col gap-4">
                     {navLinks.map((navLink) => (
-                      <li>
+                      <li key={navLink.id}>
                         <a
                           href={navLink.href}
                           className="font-normal text-[#0F172A] hover:text-blue-600 transition-all duration-300 cursor-pointer"
@@ -66,10 +66,10 @@ const Footer = () => {
                 </div>
               </motion.div>
             </div>
-            <div class="pt-12 pb-8">
-              <p class="text-sm black text-center">
+            <div className="pt-12 pb-8">
+              <p className="text-sm black text-center">
                 &copy; 2024{" "}
-                <a href="/" class="text-blue-600 font-medium hover:underline">
+                <a href="/" className="text-blue-600 font-medium hover:underline">
                   Tomso™
                 </a>{" "}
                 . All Rights Reserved.

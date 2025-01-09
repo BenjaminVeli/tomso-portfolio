@@ -41,7 +41,6 @@ const Hero = () => {
               </a>
               <a
                 href="#projects"
-                whileHover={{ scale: 1.05 }}
                 className="font-medium inline-block bg-customButton hover:bg-zinc-950 border rounded-md border-customButton py-2.5 px-6 transition-all duration-300 text-black hover:text-white"
               >
                 See the Latest Works

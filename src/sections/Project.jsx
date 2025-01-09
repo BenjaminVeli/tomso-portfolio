@@ -22,6 +22,9 @@ const Single = ({ itemProject }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 wrapper">
           <div className="flex justify-center items-center cursor-pointer">
             <img
+              loading="lazy"
+              width="600"
+              height="290"
               src={itemProject.img}
               alt={itemProject.alt}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-95"

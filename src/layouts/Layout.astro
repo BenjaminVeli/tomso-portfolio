@@ -4,8 +4,13 @@ interface Props {
   description?: string;
   url?: string;
   siteName?: string;
-  keywords?: string; 
-  canonical?: string; 
+  keywords?: string;
+  canonical?: string;
+  type?: string;
+  locale?: string;
+  publishedTime?: string;
+  updatedTime?: string;
+  themeColor?: string;
 }
 
 const {
@@ -14,7 +19,12 @@ const {
   url = "https://tomso-portfolio.vercel.app/",
   siteName = "Tomso Portfolio",
   keywords = "default, keywords",
+  themeColor = "#000000",
   canonical = "https://tomso-portfolio.vercel.app/",
+  type = "website",
+  locale = "en_US",
+  publishedTime = "2025-01-01T12:00:00Z",
+  updatedTime = "2025-01-08T18:00:00Z",
 } = Astro.props;
 ---
 
@@ -36,6 +46,13 @@ const {
     <meta name="og:description" content={description} />
     <meta name="og:url" content={url} />
     <meta name="og:site_name" content={siteName} />
+    <meta name="theme-color" content={themeColor} />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:locale" content={locale} />
+    <meta property="og:published_time" content={publishedTime} />
+    <meta property="og:updated_time" content={updatedTime} />
+
     <!-- <meta name="og:image" content={} /> -->
 
     <!-- Required -->
