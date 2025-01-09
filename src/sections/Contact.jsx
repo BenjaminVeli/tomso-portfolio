@@ -30,16 +30,16 @@ const Contact = () => {
             <form action="" className="px-0 md:px-14">
               <div className="grid grid-cols-2 gap-x-20 gap-y-14 input-box">
                 <div className="col-span-2 sm:col-span-1 input-field px-0 lg:px-14">
-                  <input type="text" className="input" required />
-                  <label className="text-zaffreBlue">Your Name</label>
+                  <input type="text" id="name" className="input" required />
+                  <label htmlFor="name" className="text-zaffreBlue">Your Name</label>
                 </div>
                 <div className="col-span-2 sm:col-span-1 input-field px-0 lg:px-14">
-                  <input type="email" className="input" required />
-                  <label className="text-zaffreBlue">Email Adress</label>
+                  <input type="email" id="email" className="input" required />
+                  <label htmlFor="email" className="text-zaffreBlue">Email Adress</label>
                 </div>
                 <div className="col-span-2 px-0 lg:px-14 input-field">
                   <textarea id="message" className="input" required />
-                  <label className="text-zaffreBlue">Your Message</label>
+                  <label htmlFor="message" className="text-zaffreBlue">Your Message</label>
                 </div>
                 <div className="col-span-2 flex items-center justify-center">
                   <button className="text-sm bg:transparent hover:bg-zaffreBlue border border-zaffreBlue text-zaffreBlue font-medium uppercase hover:text-white transition-all duration-500 py-3 md:py-5 px-20 md:px-32">

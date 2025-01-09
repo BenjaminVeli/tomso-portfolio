@@ -75,13 +75,13 @@ export const itemProjects = [
 
 export const socialMedias = [
     {
-        id: 1, icon: RiInstagramLine, link: 'https://www.instagram.com/tomso.app/',
+        id: 1, icon: RiInstagramLine, link: 'https://www.instagram.com/tomso.app/',label:'Visit my Instagram profile.',
     },
     {
-        id: 2, icon: RiTiktokFill, link: 'https://www.tiktok.com/@tomso.js?lang=es',
+        id: 2, icon: RiTiktokFill, link: 'https://www.tiktok.com/@tomso.js?lang=es',label:'Visit my TikTok profile.',
     },
     {
-        id: 3, icon: RiTwitterXFill, link: 'https://x.com/TomsoJS',
+        id: 3, icon: RiTwitterXFill, link: 'https://x.com/TomsoJS',label:'Visit my Twitter profile.',
     },
 ]
 

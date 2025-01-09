@@ -70,7 +70,7 @@ const Header = () => {
             <button
               onClick={toggleMenu}
               className="lg:hidden flex"
-              alt="Toggle Menu"
+              aria-label="Toggle Menu"
             >
               <BiMenu className="h-8 w-8 text-black" />
             </button>
@@ -91,7 +91,7 @@ const Header = () => {
               <button
                 onClick={closeMenu}
                 className="right-4 z-10 top-5 flex items-center justify-center w-8 h-8 cursor-pointer absolute "
-                alt="Close Menu"
+                aria-label="Close Menu"
               >
                 <BiX className="h-8 w-8 text-black" />
               </button>

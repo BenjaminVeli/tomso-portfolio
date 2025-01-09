@@ -1,15 +1,47 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  url?: string;
+  siteName?: string;
+  keywords?: string; 
+  canonical?: string; 
+}
+
+const {
+  title = "Default Title",
+  description = "Default Description",
+  url = "https://tomso-portfolio.vercel.app/",
+  siteName = "Tomso Portfolio",
+  keywords = "default, keywords",
+  canonical = "https://tomso-portfolio.vercel.app/",
+} = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.ico" sizes="48x48" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Tomso - Full Stack Developer</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+
+    <!-- SEO -->
+    <meta name="description" content={description} />
+    <meta name="author" content={"Benjamín Veli"} />
+    <meta name="keywords" content={keywords} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- OG Metatags -->
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+    <meta name="og:url" content={url} />
+    <meta name="og:site_name" content={siteName} />
+    <!-- <meta name="og:image" content={} /> -->
+
+    <!-- Required -->
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
-
-

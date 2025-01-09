@@ -55,6 +55,7 @@ const Footer = () => {
                     <a
                       className="bg-customBeige p-3 rounded-full"
                       href={socialMedia.link}
+                      aria-label={socialMedia.label}
                       target="_blank"
                       rel="noopener noreferrer"
                       key={socialMedia.id}
