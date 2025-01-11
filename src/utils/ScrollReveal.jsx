@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
-import { fadeUp,fadeInScale, fadeFromLeft, fadeFromLeftShort } from "./motionVariants";
+import { fadeUp,fadeInScale, fadeFromLeft, fadeFromLeftShort, fadeUpShort } from "./motionVariants";
 
 const ScrollReveal = ({
   children,
@@ -23,7 +23,8 @@ const ScrollReveal = ({
     fadeUp,
     fadeInScale,
     fadeFromLeft,
-    fadeFromLeftShort
+    fadeFromLeftShort,
+    fadeUpShort
   };
 
   return (
