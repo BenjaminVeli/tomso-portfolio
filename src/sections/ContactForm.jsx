@@ -4,7 +4,7 @@ import ScrollReveal from "../utils/ScrollReveal";
 import { motion } from "framer-motion";
 import { fadeUp } from "../utils/motionVariants";
 
-const Contact = () => {
+const ContactForm = () => {
   return (
     <section
       id="contact"
@@ -55,4 +55,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

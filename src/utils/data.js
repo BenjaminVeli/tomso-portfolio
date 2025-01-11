@@ -32,10 +32,10 @@ export const techStack = {
 };
 
 export const navLinks = [
-    { id: 1, href: "#hero", name: "Hero" },
-    { id: 2, href: "#about", name: "About" },
-    { id: 3, href: "#projects", name: "Projects" },
-    { id: 4, href: "#contact", name: "Contact" },
+    { id: 1, href: "/#hero", name: "Hero" },
+    { id: 2, href: "/#about", name: "About" },
+    { id: 3, href: "/#projects", name: "Projects" },
+    { id: 4, href: "/contact", name: "Contact" },
 ];
 
 export const itemProjects = [

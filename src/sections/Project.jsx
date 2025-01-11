@@ -34,10 +34,10 @@ const Single = ({ itemProject }) => {
             className="flex items-center md:items-start flex-col gap-4 "
             style={{ y }}
           >
-            <h3 className="text-white text-5xl font-semibold">
+            <h3 className="text-customBlack text-4xl font-bold">
               {itemProject.title}
             </h3>
-            <p className="text-gray-400 tex-3xl font-normal">
+            <p className="text-stormGray tex-3xl font-normal">
               {itemProject.description}
             </p>
             <a
@@ -70,7 +70,7 @@ const Project = () => {
 
   return (
     <section id="projects" className="pt-20">
-      <h2 className=" text-5xl md:text-6xl font-medium text-center tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_right,white,white,rgb(32,32,138,.5))] text-transparent bg-clip-text mb-2">
+      <h2 className=" text-5xl md:text-6xl font-semibold text-center tracking-tighter text-transparent bg-gradient-to-b from-customGrayDark to-black bg-clip-text">
         Featured Works
       </h2>
       {itemProjects.map((itemProject) => (

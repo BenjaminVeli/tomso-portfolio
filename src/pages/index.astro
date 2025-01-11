@@ -2,7 +2,6 @@
 import Hero from "../sections/Hero.jsx";
 import About from "../sections/About";
 import Projects from "../sections/Project.jsx";
-import Contact from "../sections/Contact.jsx";
 
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
@@ -19,11 +18,10 @@ import "../styles/global.css";
   keywords="Full Stack Developer, Front-end Developer, Back-end Developer, Web Development, Tailwind CSS, Framer Motion, React Developer, Portfolio, Responsive Web Design, Next.js, Astro"
 >
   <Header client:load />
-  <Hero client:load />
   <main>
+    <Hero client:load />
     <About client:load />
     <Projects client:load />
-    <Contact client:load />
   </main>
   <Footer client:load />
 </Layout>

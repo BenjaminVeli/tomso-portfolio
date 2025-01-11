@@ -5,18 +5,19 @@ export default {
 		extend: {
 			colors: {
 				customButton: 'rgba(196, 240, 0 , 1)',
-				customSection: '#060606',
 				customLink: '#292929',
 				customOrange: '#fc5723',
-				customGray: '#aaaaaa',
+				customGrayLight: '#dadada',
+				customGrayDark: '#555555',
+				customBlack: '#111111',
 				'light-gray-custom': 'rgb(14, 14, 16)',
 				'dark-gray-custom': 'rgb(28 28 33)',
 				customInput: 'rgb(28 28 33)',
 				colorInput: 'rgb(228 228 230)',
-				slateCustom: '#f1f7feb5',
-				slateCustomA: '#d9edff5d',
+				neutralGray: 'rgba(102, 102, 102, 1)',
 				zaffreBlue: '#4831d4',
 				customBeige: '#ebe5c9',
+				stormGray: '#666666',
 			},
 		},
 		screens: {

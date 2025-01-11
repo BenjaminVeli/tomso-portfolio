@@ -1,0 +1,22 @@
+---
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+
+import ContactForm from "../sections/ContactForm.jsx";
+
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/global.css";
+---
+
+<Layout
+title="Tomso - Contact"
+description="Have an exciting proposal or idea? Let’s bring it to life together! Contact us today and turn your vision into reality"
+url="https://tomso-portfolio.vercel.app/contact"
+keywords="Full Stack Developer, Front-end Developer, Back-end Developer, Web Development, Tailwind CSS, Framer Motion, React Developer, Portfolio, Responsive Web Design, Next.js, Astro">
+  <Header client:load />
+  <main>
+    <ContactForm client:load />
+  </main>
+  <Footer client:load />
+</Layout>
