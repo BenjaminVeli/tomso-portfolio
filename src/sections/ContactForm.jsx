@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen flex justify-center items-center py-20 md:py-40 bg-white"
+      className="w-full flex justify-center items-center min-h-screen"
     >
       <div className="container">
         <ScrollReveal variant="container">

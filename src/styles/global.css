@@ -1,11 +1,6 @@
-html, body {
-  scroll-behavior: smooth; /* Habilita el scroll suave */
-}
-
 main{
   scroll-snap-type: y mandatory; /* Activamos el scroll snap */
   overflow-y: scroll; /* Aseguramos que haya scroll vertical */
-  height: 100vh;
 }
 
 section{

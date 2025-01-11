@@ -12,20 +12,6 @@ export const fadeFromLeft = {
   },
 };
 
-export const fadeFromRight = {
-  initial: {
-    x: 500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-
 export const fadeUp = {
   initial: {
     y: 180,
@@ -40,20 +26,19 @@ export const fadeUp = {
   },
 };
 
-export const fadeUpShort = {
+export const fadeFromLeftShort = {
   initial: {
-    y: 100,
+    x: -200,
     opacity: 0,
   },
   animate: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       duration: 1,
     },
   },
 };
-
 export const fadeInScale = {
   initial: {
     opacity: 0,

@@ -1,0 +1,22 @@
+---
+import ProjectList from "../sections/ProjectList.jsx";
+
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/global.css";
+---
+
+<Layout
+  title="Tomso - Full Stack Developer"
+  description="Portfolio of web projects using React.js, Next.js, Astro, tailwind and framer motion."
+  url="https://tomso-portfolio.vercel.app/"
+  keywords="Next.js , React, Tailwind, Framer Motion"
+>
+  <Header client:load />
+  <ProjectList client:load />
+
+  <Footer client:load />
+</Layout>

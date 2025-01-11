@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import ScrollReveal from "../utils/ScrollReveal";
-import { fadeFromLeft, fadeUp } from "../utils/motionVariants";
+import { fadeUp } from "../utils/motionVariants";
 
 import { techStack } from "../utils/data";
 
-const About = () => {
+const AboutMe = () => {
   return (
     <section
       id="about"
-      className="w-full flex justify-center items-center min-h-screen  py-20 md:py-40 border-y border-customGrayLight"
+      className="w-full flex justify-center items-center min-h-screen"
     >
       <div className="container">
         <div className="grid grid-rows-2 grid-cols-1 lg:grid-cols-2 items-center gap-x-8 gap-y-8 md:gap-y-20">
@@ -107,4 +107,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMe;

@@ -1,21 +1,22 @@
 ---
-import Hero from "../sections/Hero.jsx";
-
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
 import Layout from "../layouts/Layout.astro";
 
 import "../styles/global.css";
+import AboutMe from "../sections/AboutMe";
 ---
 
 <Layout
-  title="Tomso - Full Stack Developer"
+  title="Tomso - Contact"
   description="I'm Benjamín Veli, a Full Stack Developer from Peru with a passion for creating visually engaging and user-friendly websites."
-  url="https://tomso-portfolio.vercel.app/"
+  url="https://tomso-portfolio.vercel.app/contact"
   keywords="Full Stack Developer, Front-end Developer, Back-end Developer, Web Development, Tailwind CSS, Framer Motion, React Developer, Portfolio, Responsive Web Design, Next.js, Astro"
 >
   <Header client:load />
-  <Hero client:load />
+  <main>
+    <AboutMe client:load />
+  </main>
   <Footer client:load />
 </Layout>
