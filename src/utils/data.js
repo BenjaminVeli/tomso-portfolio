@@ -46,6 +46,7 @@ export const itemProjects = [
         img: "/Project1.webp",
         alt: "Project Tomso",
         url: "https://tomso.vercel.app/",
+        github: "https://github.com/BenjaminVeli/Tomso",
     },
     {
         id: 2,
@@ -54,6 +55,7 @@ export const itemProjects = [
         img: "/Project2.webp",
         alt: "Project TomsoAI",
         url: "https://tomsoai.vercel.app/",
+        github: "https://github.com/BenjaminVeli/tomsoai.git",
     },
     {
         id: 3,
@@ -62,26 +64,37 @@ export const itemProjects = [
         img: "/Project3.webp",
         alt: "Project Exploratec",
         url: "https://exploratec.vercel.app/",
+        github: "https://github.com/BenjaminVeli/Exploratec/tree/main",
     },
     {
         id: 4,
+        title: "TalkTec",
+        description: "A platform for Tecsup students to share day-to-day campus events. Built with a React and CSS frontend, and a Django and MySQL backend.",
+        img: "/Project5.webp",
+        alt: "Project TalkTec",
+        url: "https://talk-tec-prototype.vercel.app/home.html",
+        github: "https://github.com/BenjaminVeli/TalkTec-Web.git",
+    },
+    {
+        id: 5,
         title: "NextGenPC",
         description: "Landing page designed for a store specializing in high-quality PC components and accessories. Built with HTML, Bootstrap, and JavaScript for an engaging experience.",
         img: "/Project4.webp",
         alt: "Project NextGenPC",
         url: "https://lading-page-tomso.vercel.app/",
+        github: "https://github.com/BenjaminVeli/LadingPage-Tomso",
     },
 ]
 
 export const socialMedias = [
     {
-        id: 1, icon: RiInstagramLine, link: 'https://www.instagram.com/tomso.app/',label:'Visit my Instagram profile.',
+        id: 1, icon: RiInstagramLine, link: 'https://www.instagram.com/tomso.app/', label: 'Visit my Instagram profile.',
     },
     {
-        id: 2, icon: RiTiktokFill, link: 'https://www.tiktok.com/@tomso.js?lang=es',label:'Visit my TikTok profile.',
+        id: 2, icon: RiTiktokFill, link: 'https://www.tiktok.com/@tomso.js?lang=es', label: 'Visit my TikTok profile.',
     },
     {
-        id: 3, icon: RiTwitterXFill, link: 'https://x.com/TomsoJS',label:'Visit my Twitter profile.',
+        id: 3, icon: RiTwitterXFill, link: 'https://x.com/TomsoJS', label: 'Visit my Twitter profile.',
     },
 ]
 
