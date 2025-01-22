@@ -7,16 +7,26 @@ import ContactForm from "../sections/ContactForm.jsx";
 import Layout from "../layouts/Layout.astro";
 
 import "../styles/global.css";
+
+const emailjsServiceId = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID;
+const emailjsTemplateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
+const emailjsPublicKey = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY;
 ---
 
 <Layout
-title="Tomso - Contact"
-description="Have an exciting proposal or idea? Let’s bring it to life together! Contact us today and turn your vision into reality"
-url="https://tomso-portfolio.vercel.app/contact"
-keywords="Full Stack Developer, Front-end Developer, Back-end Developer, Web Development, Tailwind CSS, Framer Motion, React Developer, Portfolio, Responsive Web Design, Next.js, Astro">
+  title="Tomso - Contact"
+  description="Have an exciting proposal or idea? Let’s bring it to life together! Contact us today and turn your vision into reality"
+  url="https://tomso-portfolio.vercel.app/contact"
+  keywords="Full Stack Developer, Front-end Developer, Back-end Developer, Web Development, Tailwind CSS, Framer Motion, React Developer, Portfolio, Responsive Web Design, Next.js, Astro"
+>
   <Header client:load />
   <main>
-    <ContactForm client:load />
+    <ContactForm
+      client:load
+      emailjsServiceId={emailjsServiceId}
+      emailjsTemplateId={emailjsTemplateId}
+      emailjsPublicKey={emailjsPublicKey}
+    />
   </main>
   <Footer client:load />
 </Layout>

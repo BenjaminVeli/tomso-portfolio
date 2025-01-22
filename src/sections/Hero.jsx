@@ -34,13 +34,13 @@ const Hero = () => {
               className="mt-8 flex items-center flex-col gap-4 md:flex-row"
             >
               <a
-                href="#contact"
+                href="/contact"
                 className="font-medium bg-zinc-950 hover:bg-customButton border rounded-md border-customButton py-2.5 px-6 transition-all duration-300 text-white hover:text-black text-center"
               >
                 Contact me
               </a>
               <a
-                href="#projects"
+                href="/projects"
                 className="font-medium inline-block bg-customButton hover:bg-zinc-950 border rounded-md border-customButton py-2.5 px-6 transition-all duration-300 text-black hover:text-white"
               >
                 See the Latest Works
